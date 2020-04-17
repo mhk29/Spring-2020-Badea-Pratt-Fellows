@@ -1,0 +1,20 @@
+########################################################
+#           HOW TO ADD CONDA KEYWORD TO BASH           # 
+########################################################
+
+STEP 1: 
+Type the line below (line 7) into a bash prompt
+export PATH=~/../../opt/anaconda3/condabin/:$PATH # run anaconda
+
+STEP 2: 
+Type the line below (line 11) to open nano and modify bash commands
+nano .bash_profile
+
+STEP 3:
+Yank/Paste the line below (line 15) into the file and save using ^O; quit using ^X
+export PATH=~/../../opt/anaconda3/condabin/:$PATH # run anaconda
+
+Now the "conda" keyword should be able to be used within bash 
+	without issue. The first step should truly be the only 
+	really necessary one, but this will ensure that the command
+	effectively always works. 
